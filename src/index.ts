@@ -4,7 +4,7 @@ import 'angular-material/angular-material.css';
 import {hello} from './app/hello';
 
 import {Categorias} from './app/categorias/Categorias';
-import {Menu} from './app/menu/Menu';
+import {AgMenu} from './app/menu/Menu';
 import {Produtos} from './app/produtos/Produtos';
 
 import 'angular-ui-router';
@@ -28,6 +28,6 @@ angular
     .config(routesConfig)
     .config(themeConfig)
     .component('app', hello)
-    .component('menu', Menu)
+    .component('menu', AgMenu)
     .component('categorias', Categorias)
     .component('produtos', Produtos);

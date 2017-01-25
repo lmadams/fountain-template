@@ -27,7 +27,7 @@ class MenuController {
     }
 }
 
-export const Menu: angular.IComponentOptions = {
+export const AgMenu: angular.IComponentOptions = {
     template: require('./Menu.html'),
     controller: MenuController
 };

@@ -22,6 +22,7 @@
                 Sistema
             </h1>
 
+
             <md-button class="md-icon-button">
                 <md-icon>apps</md-icon>
             </md-button>
@@ -33,11 +34,19 @@
             </md-button>
         </md-toolbar>
 
-        <div flex layout="row">
+        <!--<menu></menu>-->
 
-            <menu></menu>
+        <div flex layout="row"
+             style="background-color: #f2f2f2;"
+             layout-align="center">
 
-            <md-content flex id="conteudo">
+            <md-sidenav md-is-locked-open="false"
+                        class="md-whiteframe-4dp">
+                <menu></menu>
+            </md-sidenav>
+
+            <md-content flex id="conteudo"
+                        class="md-whiteframe-4dp">
                 <ui-view></ui-view>
             </md-content>
         </div>

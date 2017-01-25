@@ -32,20 +32,12 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: lightgrey;
-}
-
-md-sidenav md-list {
-  //padding: 0px 0px 8px 0px;
+  //background-color: lightgrey;
+  //background-color: rgb(255,255,255);
 }
 
 #conteudo {
-  //overflow: hidden;
-  //max-width: 1200px;
-}
-
-#conteudo {
-  //padding-left: 40px;
-  //padding-right: 40px;
-  //padding-top: 5px;
+  overflow: hidden;
+  max-width: 1200px;
+  border-radius: 2px;
 }
