@@ -1,0 +1,11 @@
+<md-sidenav md-is-locked-open="true"
+            class="md-whiteframe-4dp">
+    <md-list>
+        <!-- List item #1 -->
+        <md-list-item ng-repeat="opcao in $ctrl.opcoes">
+            <md-button ng-click="$ctrl.onClick(opcao.state)">
+                {{opcao.nome}}
+            </md-button>
+        </md-list-item>
+    </md-list>
+</md-sidenav>

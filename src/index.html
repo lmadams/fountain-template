@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+    <head>
+        <base href="/">
+        <meta charset="utf-8">
+        <title>FountainJS</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="icon" type="image/png" href="http://fountainjs.io/assets/imgs/fountain.png" />
+    </head>
+
+    <body ng-app="app"
+          layout="column">
+
+        <md-toolbar layout="row"
+                    class="md-toolbar-tools">
+            <md-button class="md-icon-button">
+                <md-icon>menu</md-icon>
+            </md-button>
+
+            <h1 flex>
+                Sistema
+            </h1>
+
+            <md-button class="md-icon-button">
+                <md-icon>apps</md-icon>
+            </md-button>
+            <md-button class="md-icon-button">
+                <md-icon>notifications</md-icon>
+            </md-button>
+            <md-button class="md-fab md-mini">
+                <md-icon>person</md-icon>
+            </md-button>
+        </md-toolbar>
+
+        <div flex layout="row">
+
+            <menu></menu>
+
+            <md-content flex id="conteudo">
+                <ui-view></ui-view>
+            </md-content>
+        </div>
+    </body>
+</html>
